@@ -21,7 +21,9 @@ export default function ProposalViewer({ pages }: ProposalViewerProps) {
           alt={page.alt}
           width={1920}
           height={2714}
-          unoptimized // 이미지 최적화 건너뛰고 원본 파일 그대로 표시. 지워도 됨.
+          quality={85}
+          priority={idx === 0}
+          loading={idx === 0 ? 'eager' : 'lazy'}
         />
       ))}
     </div>
