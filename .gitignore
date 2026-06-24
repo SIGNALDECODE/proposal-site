@@ -39,3 +39,10 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+.env*.local
+
+# local/scratch (deploy work)
+proposal-files/
+.claude/
+rerender-webp.mjs
+supabase-setup.sql

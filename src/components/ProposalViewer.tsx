@@ -21,9 +21,10 @@ export default function ProposalViewer({ pages }: ProposalViewerProps) {
           alt={page.alt}
           width={1920}
           height={2714}
-          quality={75}
+          unoptimized
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 1200px"
           priority={idx === 0}
+          loading={idx === 0 ? undefined : 'lazy'}
           placeholder="empty"
         />
       ))}

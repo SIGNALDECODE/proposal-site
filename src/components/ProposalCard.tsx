@@ -19,6 +19,7 @@ export default function ProposalCard({ sectionSlug, slug, title, summary, thumb 
         alt={thumb.alt}
         width={640}
         height={360}
+        unoptimized
       />
       <div className={styles.body}>
         <h2 className={styles.title}>{title}</h2>
